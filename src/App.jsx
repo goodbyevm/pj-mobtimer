@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MobTimer from './MobTimer';
+import Participants from './Participants'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and saverrrrr to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+
+            <body className="App">
+            <header className="App-header">
+                {/*<img src={logo} className="App-logo" alt="logo" />*/}
+                <p>
+                    Edit <code>src/App.js</code> and saver to reload.
+                </p>
+            </header>
+
+            <Participants className="Participants"/>
+            <MobTimer/>
+            </body>
+
+        );
+    }
 }
 
 export default App;

@@ -1,15 +1,12 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #83878f;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,15 +15,24 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Participants {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Participant {
+  flex-grow: 1;
+  display: inline-flex;
+  justify-content: center;
+  /*display: inline-block;*/
 }
+
+
+.Timer {
+  min-height: 50vh;
+}
+
+
