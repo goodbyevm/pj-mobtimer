@@ -1,11 +1,13 @@
-import React, {Component} from 'react';
-import Countdown from 'react-countdown-now';
+import React, { Component } from 'react';
+import Countdown from "react-countdown-now";
 
 class Timer extends Component {
-    render () {
+    render() {
         return (
             <div className="Timer">
-            <Countdown date={Date.now() + 10000} />
+                <div className="WatchFace">
+                    <Countdown date={Date.now() + 10000} />
+                </div>
             </div>
         );
     }

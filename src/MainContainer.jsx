@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
-import MobTimer from './MobTimer';
+import Timer from './Timer';
 import Participants from './Participants'
 
-class App extends Component {
+class MainContainer extends Component {
+
     render() {
         return (
-
+            <div>
+            <head>
+                <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'/>
+            </head>
             <body className="App">
             <header className="App-header">
                 {/*<img src={logo} className="App-logo" alt="logo" />*/}
                 <p>
-                    Edit <code>src/App.js</code> and saver to reload.
+                    Mobtimer
                 </p>
             </header>
 
-            <Participants className="Participants"/>
-            <MobTimer/>
+            <Participants/>
+            <Timer/>
             </body>
+            </div>
 
         );
     }
 }
 
-export default App;
+export default MainContainer;
